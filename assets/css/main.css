@@ -1029,6 +1029,26 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+/* ==============================
+   Resume Section – Justify Text
+   ============================== */
+#resume .resume-item {
+    margin-bottom: 2rem;
+}
+
+#resume .resume-item p,
+#resume .resume-item li,
+#resume .resume-item em {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    color: #333;
+}
+
+#resume .resume-item ul {
+    padding-left: 1.2rem;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1463,4 +1483,38 @@ section,
 .header-social-links a:hover img {
   opacity: 1;
   filter: brightness(0);
+}
+
+/* Untuk 1 item khusus */
+.service-item.special .icon-blob {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px auto;
+  background-color: #f5f5f5;  /* abu muda awal */
+  border-radius: 60% 40% 50% 70% / 60% 60% 40% 50%; /* bentuk blob lembut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* efek hover: berubah jadi kuning dan garis putih */
+.service-item.special:hover .icon-blob {
+  background-color: #ffcf5c;  /* kuning lembut */
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px #ffffff, 0 0 15px rgba(255, 207, 92, 0.6); /* garis + glow putih */
+}
+
+/* ikon di tengah */
+.service-item.special .icon-blob img {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+/* biar ikon ikut jadi putih pas hover */
+.service-item.special:hover .icon-blob img {
+  filter: brightness(0) invert(1);
 }
