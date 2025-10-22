@@ -1518,3 +1518,38 @@ section,
 .service-item.special:hover .icon-blob img {
   filter: brightness(0) invert(1);
 }
+
+.whatsapp-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* agar tombol benar-benar di tengah */
+  text-align: center;
+  padding: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #34b7a7;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(52, 183, 167, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #2fa495;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(52, 183, 167, 0.5);
+}
+
+/* ikon whatsapp (gunakan fontawesome) */
+.whatsapp-btn i {
+  font-size: 20px;
+}
